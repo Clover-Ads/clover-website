@@ -47,7 +47,7 @@ export default function Contact() {
                 Thank You for Contacting Us!
               </h1>
               <p className="text-gray-600 mb-6">
-                We've received your message and will get back to you within 24 hours.
+                We&apos;ve received your message and will get back to you within 24 hours.
               </p>
               <div className="space-y-3">
                 <Link href="/" className="bg-gradient-green text-white px-6 py-3 rounded-lg font-semibold transition-colors hover:opacity-90 block">
@@ -268,7 +268,7 @@ export default function Contact() {
               </h3>
               <p className="text-gray-600">
                 Currently, we focus on short-video platforms: TikTok, Instagram (Stories & Reels), and Facebook. 
-                We're expanding to YouTube Shorts, Snapchat, and other platforms based on user demand.
+                We&apos;re expanding to YouTube Shorts, Snapchat, and other platforms based on user demand.
               </p>
             </div>
             
@@ -297,7 +297,7 @@ export default function Contact() {
                 How do I get started?
               </h3>
               <p className="text-gray-600">
-                Join our waitlist to get early access when we launch. We'll notify you as soon as Clover is available 
+                Join our waitlist to get early access when we launch. We&apos;ll notify you as soon as Clover is available 
                 and provide exclusive onboarding support for waitlist members.
               </p>
             </div>

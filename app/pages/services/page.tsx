@@ -346,7 +346,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-green-100 mb-8">
-            Join SMBs who are ready to see better ROI with Clover's event-driven advertising.
+            Join SMBs who are ready to see better ROI with Clover&apos;s event-driven advertising.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/pages/waitlist" className="bg-white text-green-500 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition-colors">

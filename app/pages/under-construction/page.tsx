@@ -26,7 +26,7 @@ export default function UnderConstruction() {
             </h1>
             
             <p className="text-gray-600 mb-6">
-              We're working hard to bring you something amazing! Our social media pages will be launching soon.
+              We&apos;re working hard to bring you something amazing! Our social media pages will be launching soon.
             </p>
             
             <div className="mb-8">

@@ -131,13 +131,13 @@ export default function Home() {
               <h4 className="font-semibold text-gray-900 mb-3">Generated Campaign Examples:</h4>
               <div className="space-y-3">
                 <div className="p-3 bg-gradient-to-r from-blue-50 to-blue-100 rounded border-l-4 border-blue-400">
-                  <p className="text-sm text-gray-700">"Rainy days call for Nice Day delivery" - Soup & noodle focus</p>
+                  <p className="text-sm text-gray-700">&quot;Rainy days call for Nice Day delivery&quot; - Soup & noodle focus</p>
                 </div>
                 <div className="p-3 bg-gradient-to-r from-purple-50 to-purple-100 rounded border-l-4 border-purple-400">
-                  <p className="text-sm text-gray-700">"Who said 2AM can't be yummy?" - Late night targeting</p>
+                  <p className="text-sm text-gray-700">&quot;Who said 2AM can&apos;t be yummy?&quot; - Late night targeting</p>
                 </div>
                 <div className="p-3 bg-gradient-to-r from-green-50 to-green-100 rounded border-l-4 border-green-400">
-                  <p className="text-sm text-gray-700">"Game day fuel for Yale fans!" - Sports event targeting</p>
+                  <p className="text-sm text-gray-700">&quot;Game day fuel for Yale fans!&quot; - Sports event targeting</p>
                 </div>
               </div>
             </div>

@@ -49,7 +49,7 @@ export default function Waitlist() {
                 Welcome to the Clover Waitlist!
               </h1>
               <p className="text-gray-600 mb-6">
-                Thank you for your interest in Clover. We'll notify you as soon as we launch and send you exclusive early access.
+                Thank you for your interest in Clover. We&apos;ll notify you as soon as we launch and send you exclusive early access.
               </p>
               <p className="text-sm text-gray-500 mb-6">
                 Keep an eye on your inbox for updates and special offers.
@@ -224,7 +224,7 @@ export default function Waitlist() {
               </button>
               
               <p className="text-sm text-gray-500 text-center">
-                No spam, ever. We'll only email you about Clover updates and your early access.
+                No spam, ever. We&apos;ll only email you about Clover updates and your early access.
               </p>
             </form>
           </div>

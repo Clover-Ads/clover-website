@@ -15,7 +15,7 @@ export default function About() {
               About <span className="gradient-text-hero">Clover</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're revolutionizing how small and medium businesses approach digital advertising through event-driven, autonomous campaign management.
+              We&apos;re revolutionizing how small and medium businesses approach digital advertising through event-driven, autonomous campaign management.
             </p>
           </div>
         </div>
@@ -30,10 +30,10 @@ export default function About() {
               <p className="text-lg text-gray-600 mb-4">
                 At Clover, we believe every small business deserves access to sophisticated advertising technology. 
                 Traditional ad management platforms are either too expensive, too complex, or require too much time 
-                – resources that SMBs simply don't have.
+                – resources that SMBs simply don&apos;t have.
               </p>
               <p className="text-lg text-gray-600 mb-4">
-                We've created the first event-driven ad management platform that automatically optimizes campaigns 
+                We&apos;ve created the first event-driven ad management platform that automatically optimizes campaigns 
                 based on real-time data – weather, holidays, news, and sports events – to ensure your ads run at 
                 the perfect moment for maximum impact.
               </p>
