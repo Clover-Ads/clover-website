@@ -1,5 +1,8 @@
+'use client';
+
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import ProcessPipeline from '../../components/ProcessPipeline';
 import Link from 'next/link';
 
 export default function About() {
@@ -39,26 +42,79 @@ export default function About() {
               </p>
             </div>
             <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Event-Driven?</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>73%</strong> of consumers prefer short-form video ads</p>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>2.5x</strong> more engagement than other formats</p>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>10x</strong> less cost per impression</p>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>60%</strong> of SMBs struggle with customer acquisition</p>
-                </li>
-              </ul>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Why Event-Driven?</h3>
+              
+              {/* Visual Stats Charts */}
+              <div className="grid grid-cols-2 gap-4">
+                {/* Consumer Preference Chart */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-green-600 mb-1">73%</div>
+                    <div className="text-sm text-gray-600 leading-tight">prefer short-form video ads</div>
+                  </div>
+                  <div className="mt-3">
+                    <div className="bg-gray-200 rounded-full h-2">
+                      <div className="bg-green-500 h-2 rounded-full" style={{width: '73%'}}></div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Engagement Chart */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600 mb-1">2.5x</div>
+                    <div className="text-sm text-gray-600 leading-tight">more engagement vs other formats</div>
+                  </div>
+                  <div className="mt-3 flex items-end space-x-1 justify-center">
+                    <div className="bg-gray-300 w-4 h-3 rounded-sm"></div>
+                    <div className="bg-blue-500 w-4 h-8 rounded-sm"></div>
+                  </div>
+                </div>
+
+                {/* Cost Efficiency Chart */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-purple-600 mb-1">10x</div>
+                    <div className="text-sm text-gray-600 leading-tight">less cost per impression</div>
+                  </div>
+                  <div className="mt-3 flex items-end space-x-1 justify-center">
+                    <div className="bg-gray-300 w-3 h-8 rounded-sm"></div>
+                    <div className="bg-purple-500 w-3 h-2 rounded-sm"></div>
+                  </div>
+                </div>
+
+                {/* SMB Struggle Chart */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-red-600 mb-1">60%</div>
+                    <div className="text-sm text-gray-600 leading-tight">of SMBs struggle with acquisition</div>
+                  </div>
+                  <div className="mt-3">
+                    <div className="bg-gray-200 rounded-full h-2">
+                      <div className="bg-red-500 h-2 rounded-full" style={{width: '60%'}}></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Pipeline Flowchart */}
+      <section className="py-20 bg-gradient-mesh">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our <span className="gradient-text">Process Pipeline</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See how our ROI-optimized campaigns leverage real-time data and automated strategy for maximum performance.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <ProcessPipeline />
           </div>
         </div>
       </section>
