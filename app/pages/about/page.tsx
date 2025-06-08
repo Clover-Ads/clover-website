@@ -47,12 +47,12 @@ export default function About() {
               {/* Visual Stats Charts */}
               <div className="grid grid-cols-2 gap-4">
                 {/* Consumer Preference Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-green-600 mb-1">73%</div>
                     <div className="text-sm text-gray-600 leading-tight">prefer short-form video ads</div>
                   </div>
-                  <div className="mt-3">
+                  <div className="mt-3 w-full">
                     <div className="bg-gray-200 rounded-full h-2">
                       <div className="bg-green-500 h-2 rounded-full" style={{width: '73%'}}></div>
                     </div>
@@ -60,7 +60,7 @@ export default function About() {
                 </div>
 
                 {/* Engagement Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-blue-600 mb-1">2.5x</div>
                     <div className="text-sm text-gray-600 leading-tight">more engagement vs other formats</div>
@@ -72,7 +72,7 @@ export default function About() {
                 </div>
 
                 {/* Cost Efficiency Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-purple-600 mb-1">10x</div>
                     <div className="text-sm text-gray-600 leading-tight">less cost per impression</div>
@@ -84,12 +84,12 @@ export default function About() {
                 </div>
 
                 {/* SMB Struggle Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200">
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-red-600 mb-1">60%</div>
                     <div className="text-sm text-gray-600 leading-tight">of SMBs struggle with acquisition</div>
                   </div>
-                  <div className="mt-3">
+                  <div className="mt-3 w-full">
                     <div className="bg-gray-200 rounded-full h-2">
                       <div className="bg-red-500 h-2 rounded-full" style={{width: '60%'}}></div>
                     </div>

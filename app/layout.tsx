@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { Playfair_Display, Nunito } from "next/font/google";
 import "./globals.css";
 
-const sourceSans = Source_Sans_3({
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-source-sans",
-  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-nunito",
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 const playfairDisplay = Playfair_Display({ 
@@ -31,7 +31,7 @@ export default function RootLayout({
         <meta name="description" content="Clover uses real-time event data to automatically optimize short-video ads for SMBs" />
       </head>
       <body
-        className={`${sourceSans.variable} ${playfairDisplay.variable} font-sans antialiased`}
+        className={`${nunito.variable} ${playfairDisplay.variable} font-sans antialiased`}
       >
         {children}
       </body>

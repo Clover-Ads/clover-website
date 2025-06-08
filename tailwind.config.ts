@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-source-sans)', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['var(--font-nunito)', 'system-ui', '-apple-system', 'sans-serif'],
         serif: ['var(--font-playfair-display)', 'Georgia', 'Times New Roman', 'serif'],
       },
     },
