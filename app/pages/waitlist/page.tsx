@@ -239,7 +239,7 @@ export default function Waitlist() {
               Early Access <span className="gradient-text">Benefits</span>
             </h2>
             <p className="text-xl text-gray-600">
-              Be among the first to experience the future of ad management
+              Be among the first to experience the future of ad management.
             </p>
           </div>
           
