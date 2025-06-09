@@ -177,7 +177,7 @@ export default function Services() {
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Clover Pro</h3>
               <p className="text-lg text-gray-600 mb-6">
                 Everything you need to run successful event-driven ad campaigns, bundled into one simple plan.
-              </p>
+            </p>
               <ul className="space-y-3 text-left max-w-md mx-auto md:mx-0 text-black">
               <li className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
