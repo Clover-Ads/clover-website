@@ -268,7 +268,7 @@ export default function Contact() {
               </h3>
               <p className="text-gray-600">
                 Currently, we focus on short-video platforms: TikTok, Instagram (Stories & Reels), and Facebook. 
-                We&apos;re expanding to YouTube Shorts, Snapchat, and other platforms based on user demand.
+                We&apos;re expanding to YouTube Shorts, and other platforms based on user demand.
               </p>
             </div>
             

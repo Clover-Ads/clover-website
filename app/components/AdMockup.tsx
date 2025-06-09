@@ -29,15 +29,15 @@ const AdMockup = () => {
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-              <span className="text-sm">Local Sports Game - 2.5mi away</span>
+              <span className="text-sm text-gray-900">Local Sports Game - 2.5mi away</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-              <span className="text-sm">Weather: Rain Expected (87%)</span>
+              <span className="text-sm text-gray-900">Weather: Rain Expected (87%)</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-              <span className="text-sm">Weekend Festival - High Intent</span>
+              <span className="text-sm text-gray-900">Weekend Festival - High Intent</span>
             </div>
           </div>
         </div>
