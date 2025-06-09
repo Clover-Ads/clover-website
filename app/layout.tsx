@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Playfair_Display, Nunito } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-nunito",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const playfairDisplay = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: "--font-playfair-display",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -19,8 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Clover - Event-Driven Ad Management</title>
+        <meta name="description" content="Clover uses real-time event data to automatically optimize short-video ads for SMBs" />
+      </head>
       <body
-        className={`${inter.variable} font-inter antialiased`}
+        className={`${nunito.variable} ${playfairDisplay.variable} font-sans antialiased`}
       >
         {children}
       </body>

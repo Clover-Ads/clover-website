@@ -6,12 +6,13 @@
   --clover-green: #22c55e;
   --clover-green-dark: #16a34a;
   --clover-green-light: #4ade80;
+  --font-playfair-display: var(--font-playfair-display);
+  --font-nunito: var(--font-nunito);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-inter: var(--font-inter);
   --color-clover-green: var(--clover-green);
   --color-clover-green-dark: var(--clover-green-dark);
   --color-clover-green-light: var(--clover-green-light);
@@ -27,7 +28,46 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+}
+
+/* Typography - More selective serif usage */
+h1, h2 {
+  font-family: var(--font-playfair-display), Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.015em;
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+p, span, a, div {
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+}
+
+/* Brand font for Clover title - Keep serif for brand */
+.font-brand {
+  font-family: var(--font-playfair-display), Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Utility classes for explicit font control */
+.font-serif-heading {
+  font-family: var(--font-playfair-display), Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.015em;
+}
+
+.font-sans-heading {
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Legacy font-heading class for compatibility with existing h1, h2 usage */
+.font-heading {
+  font-family: var(--font-playfair-display), Georgia, 'Times New Roman', serif;
+  letter-spacing: -0.015em;
 }
 
 /* Custom animations */
@@ -73,8 +113,9 @@ body {
   animation: gradient-shift 3s ease infinite;
 }
 
-/* Gradient text utilities */
+/* Gradient text utilities - Keep serif for emphasis */
 .gradient-text {
+  font-family: var(--font-playfair-display), Georgia, 'Times New Roman', serif;
   background: linear-gradient(135deg, #22c55e, #4ade80, #10b981);
   background-clip: text;
   -webkit-background-clip: text;
@@ -84,12 +125,24 @@ body {
 }
 
 .gradient-text-hero {
+  font-family: var(--font-playfair-display), Georgia, 'Times New Roman', serif;
   background: linear-gradient(135deg, #22c55e, #4ade80, #06d6a0, #10b981);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
   animation: gradient-shift 4s ease infinite;
+}
+
+/* Sans-serif gradient text for when we want clean gradient text */
+.gradient-text-sans {
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #22c55e, #4ade80, #10b981);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient-shift 3s ease infinite;
 }
 
 /* Additional gradient backgrounds */
@@ -109,8 +162,126 @@ body {
   background: linear-gradient(135deg, #dcfce7, #bbf7d0, #86efac, #4ade80);
 }
 
-/* Brand font for Clover title */
-.font-brand {
-  font-weight: 700;
-  letter-spacing: -0.025em;
+/* Enhanced Card Styles */
+.feature-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(34, 197, 94, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+/* Stats Animation */
+@keyframes countUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.stat-animate {
+  animation: countUp 1s ease-out forwards;
+}
+
+/* Chart Animations */
+@keyframes drawChart {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.chart-animate {
+  transform-origin: left;
+  animation: drawChart 1.5s ease-out forwards;
+}
+
+/* Enhanced Gradient Backgrounds */
+.bg-gradient-mesh {
+  background-image: 
+    radial-gradient(at 40% 20%, rgba(34, 197, 94, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(74, 222, 128, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(22, 163, 74, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, rgba(34, 197, 94, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(74, 222, 128, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, rgba(22, 163, 74, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, rgba(34, 197, 94, 0.1) 0px, transparent 50%);
+}
+
+/* Premium Button Styles */
+.btn-premium {
+  background: linear-gradient(135deg, #10b981, #22c55e, #4ade80);
+  background-size: 200% 200%;
+  box-shadow: 
+    0 8px 32px rgba(34, 197, 94, 0.3),
+    0 4px 16px rgba(16, 185, 129, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(34, 197, 94, 0.4),
+    0 6px 20px rgba(16, 185, 129, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  background-position: 100% 100%;
+}
+
+.btn-premium:hover::before {
+  left: 100%;
+}
+
+.btn-premium:active {
+  transform: translateY(-1px);
+  box-shadow: 
+    0 6px 24px rgba(34, 197, 94, 0.3),
+    0 3px 12px rgba(16, 185, 129, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Premium button pulse animation */
+@keyframes premium-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 8px 32px rgba(34, 197, 94, 0.3),
+      0 4px 16px rgba(16, 185, 129, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 
+      0 12px 40px rgba(34, 197, 94, 0.4),
+      0 6px 20px rgba(16, 185, 129, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  }
+}
+
+.btn-premium-pulse {
+  animation: premium-pulse 2s ease-in-out infinite;
 }

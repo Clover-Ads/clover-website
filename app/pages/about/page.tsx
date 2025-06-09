@@ -1,5 +1,8 @@
+'use client';
+
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import ProcessPipeline from '../../components/ProcessPipeline';
 import Link from 'next/link';
 
 export default function About() {
@@ -39,26 +42,80 @@ export default function About() {
               </p>
             </div>
             <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Event-Driven?</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>73%</strong> of consumers prefer short-form video ads</p>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>2.5x</strong> more engagement than other formats</p>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>10x</strong> less cost per impression</p>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                  <p className="text-gray-600"><strong>60%</strong> of SMBs struggle with customer acquisition</p>
-                </li>
-              </ul>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Why Event-Driven?</h3>
+              
+              <div className="grid grid-cols-2 gap-4">
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-green-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-green-600">73%</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">prefer short-form video ads</p>
+                    <div className="mt-4">
+                      <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-green-500 h-2 rounded-full w-[73%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-blue-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-blue-600">2.5x</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">more engagement vs other formats</p>
+                    <div className="mt-4">
+                       <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-blue-500 h-2 rounded-full w-[65%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-purple-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-purple-600">10x</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">less cost per impression</p>
+                    <div className="mt-4">
+                       <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-purple-500 h-2 rounded-full w-[90%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-red-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-red-600">60%</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">of SMBs struggle with acquisition</p>
+                    <div className="mt-4">
+                       <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-red-500 h-2 rounded-full w-[60%]"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Pipeline Flowchart */}
+      <section className="py-20 bg-gradient-mesh">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our <span className="gradient-text">Process Pipeline</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See how our ROI-optimized campaigns leverage real-time data and automated strategy for maximum performance.
+            </p>
+          </div>
+          
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <ProcessPipeline />
           </div>
         </div>
       </section>
@@ -152,7 +209,7 @@ export default function About() {
               Our Key <span className="gradient-text">Innovation</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Event-driven micro-campaigns that capitalize on the perfect moments
+              Event-driven micro-campaigns that capitalize on the perfect moments.
             </p>
           </div>
           
@@ -195,10 +252,10 @@ export default function About() {
             Join the revolution of event-driven advertising and start seeing better results today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/pages/waitlist" className="bg-gradient-success text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors hover:opacity-90">
-              Join Our Waitlist
+            <Link href="/pages/waitlist" className="bg-gradient-success text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors hover:opacity-90 text-center flex items-center justify-center">
+              Join the waitlist
             </Link>
-            <Link href="/pages/services" className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+            <Link href="/pages/services" className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center flex items-center justify-center">
               View Our Services
             </Link>
           </div>
