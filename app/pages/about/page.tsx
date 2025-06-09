@@ -42,7 +42,7 @@ export default function About() {
               </p>
             </div>
             <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Why Event-Driven?</h3>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Why Short-form Ads?</h3>
               
               <div className="grid grid-cols-2 gap-4">
                 {/* Stat Card */}

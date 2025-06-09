@@ -39,7 +39,7 @@ export default function Home() {
                 <Link href="/pages/waitlist" className="btn-premium text-white px-10 py-4 rounded-xl text-xl font-bold text-center flex items-center justify-center shadow-2xl relative">
                   <span className="relative z-10">Join the waitlist</span>
                 </Link>
-                <Link href="/pages/services" className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center flex items-center justify-center">
+                <Link href="/pages/about" className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center flex items-center justify-center">
                   Learn More
                 </Link>
               </div>
