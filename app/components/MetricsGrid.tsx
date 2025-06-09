@@ -1,5 +1,4 @@
 import React from 'react';
-import { Card, Grid, Metric, Text } from '@tremor/react';
 
 const metrics = [
   {
@@ -30,22 +29,26 @@ const metrics = [
 
 const MetricsGrid = () => {
   return (
-    <Grid numItems={1} numItemsSm={2} numItemsLg={4} className="gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {metrics.map((item) => (
-        <Card key={item.title} className="feature-card stat-animate relative pb-8" style={{
-          animationDelay: `${metrics.indexOf(item) * 0.1}s`
-        }}>
+        <div 
+          key={item.title} 
+          className="feature-card stat-animate relative pb-8 bg-white rounded-lg border border-gray-200 p-6 shadow-sm hover:shadow-md transition-shadow" 
+          style={{
+            animationDelay: `${metrics.indexOf(item) * 0.1}s`
+          }}
+        >
           <div className="mb-4">
-            <Text className="text-gray-500 mb-2">{item.title}</Text>
-            <Metric className="text-green-600 mb-1">{item.metric}</Metric>
-            <Text className="text-sm text-gray-600">{item.description}</Text>
+            <p className="text-gray-500 mb-2 text-sm font-medium">{item.title}</p>
+            <p className="text-green-600 mb-1 text-3xl font-bold">{item.metric}</p>
+            <p className="text-sm text-gray-600">{item.description}</p>
           </div>
-          <Text className="text-xs text-gray-400 absolute bottom-4 left-4">
+          <p className="text-xs text-gray-400 absolute bottom-4 left-4">
             Source: {item.source}
-          </Text>
-        </Card>
+          </p>
+        </div>
       ))}
-    </Grid>
+    </div>
   );
 };
 

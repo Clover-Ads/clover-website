@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tremor/react": "^3.18.7",
     "next": "15.3.3",
     "postcss": "^8.5.4",
     "react": "^19.0.0",
