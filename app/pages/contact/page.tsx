@@ -54,7 +54,7 @@ export default function Contact() {
                   Back to Home
                 </Link>
                 <Link href="/pages/waitlist" className="text-green-600 hover:text-green-700 font-medium block">
-                  Join Our Waitlist
+                  Join the waitlist
                 </Link>
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function Contact() {
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Prefer to start right away?</h3>
                 <Link href="/pages/waitlist" className="bg-gradient-green text-white px-6 py-3 rounded-lg font-semibold transition-colors hover:opacity-90 inline-block">
-                  Join Our Waitlist
+                  Join the waitlist
                 </Link>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function Contact() {
                 How do I get started?
               </h3>
               <p className="text-gray-600">
-                Join our waitlist to get early access when we launch. We&apos;ll notify you as soon as Clover is available 
+                Join the waitlist to get early access when we launch. We&apos;ll notify you as soon as Clover is available 
                 and provide exclusive onboarding support for waitlist members.
               </p>
             </div>

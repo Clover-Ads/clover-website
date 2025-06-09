@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Link from 'next/link';
 import AdMockup from './components/AdMockup';
 import AnalyticsMockup from './components/AnalyticsMockup';
-import MobileMockup from './components/MobileMockup';
+import CampaignInsights from './components/CampaignInsights';
 import MetricsGrid from './components/MetricsGrid';
 
 export default function Home() {
@@ -21,8 +21,8 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 bg-gradient-hero">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="pt-20 pb-2 bg-gradient-hero">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
           <div className="text-center">
             <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 font-heading">
@@ -45,6 +45,9 @@ export default function Home() {
               </div>
               <div className="mt-12">
                 <MetricsGrid />
+                <p className="text-left text-sm text-gray-500 mt-8 italic">
+                  *Industry benchmarks for AI ad automation and short-form video advertising
+                </p>
               </div>
             </div>
           </div>
@@ -52,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gradient-mesh">
+      <section className="pt-16 pb-20 bg-gradient-mesh">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-heading">
@@ -230,9 +233,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* iPhone Mockup */}
+            {/* Campaign Insights */}
             <div className="transform hover:scale-105 transition-transform duration-500 lg:order-2">
-              <MobileMockup />
+              <CampaignInsights />
             </div>
           </div>
         </div>

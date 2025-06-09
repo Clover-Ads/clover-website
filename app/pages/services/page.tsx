@@ -174,28 +174,28 @@ export default function Services() {
           
           <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 border border-green-100 flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/2 text-center md:text-left">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">Clover Pro</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Clover Pro</h3>
               <p className="text-lg text-gray-600 mb-6">
                 Everything you need to run successful event-driven ad campaigns, bundled into one simple plan.
               </p>
               <ul className="space-y-3 text-left max-w-md mx-auto md:mx-0 text-black">
-                <li className="flex items-center space-x-3">
+              <li className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>Unlimited event-driven campaigns</span>
-                </li>
-                <li className="flex items-center space-x-3">
+                <span>Unlimited event-driven campaigns</span>
+              </li>
+              <li className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>AI-generated video content</span>
-                </li>
-                <li className="flex items-center space-x-3">
+                <span>AI-generated video content</span>
+              </li>
+              <li className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>Real-time optimization</span>
-                </li>
-                 <li className="flex items-center space-x-3">
+                <span>Real-time optimization</span>
+              </li>
+              <li className="flex items-center space-x-3">
                   <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span>24/7 customer support</span>
-                </li>
-              </ul>
+                <span>24/7 customer support</span>
+              </li>
+            </ul>
             </div>
             <div className="md:w-1/2 flex-shrink-0">
               <div className="bg-gradient-to-br from-gray-50 to-green-100 rounded-xl p-8 text-center shadow-inner">
@@ -206,7 +206,7 @@ export default function Services() {
                 <p className="text-sm text-gray-500 mb-6">No setup fees • Cancel anytime</p>
                 <Link href="/pages/waitlist" className="bg-gradient-success text-white px-10 py-4 rounded-lg text-lg font-bold transition-transform hover:scale-105 inline-block w-full">
                   Join the Waitlist
-                </Link>
+            </Link>
                 <p className="text-xs text-gray-500 mt-4">Early access for waitlist members</p>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function Services() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/pages/waitlist" className="bg-white text-green-500 hover:bg-gray-100 px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center flex items-center justify-center">
-              Join Our Waitlist
+              Join the waitlist
             </Link>
             <Link href="/pages/contact" className="border-2 border-white text-white hover:bg-white hover:text-green-500 px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center flex items-center justify-center">
               Contact Us

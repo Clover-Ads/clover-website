@@ -53,7 +53,7 @@ export default function UnderConstruction() {
                 href="/pages/waitlist" 
                 className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block w-full"
               >
-                Join Our Waitlist for Updates
+                Join the waitlist for Updates
               </Link>
             </div>
           </div>
