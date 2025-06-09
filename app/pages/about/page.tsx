@@ -44,54 +44,55 @@ export default function About() {
             <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Why Event-Driven?</h3>
               
-              {/* Visual Stats Charts */}
               <div className="grid grid-cols-2 gap-4">
-                {/* Consumer Preference Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-green-600 mb-1">73%</div>
-                    <div className="text-sm text-gray-600 leading-tight">prefer short-form video ads</div>
-                  </div>
-                  <div className="mt-3 w-full">
-                    <div className="bg-gray-200 rounded-full h-2">
-                      <div className="bg-green-500 h-2 rounded-full" style={{width: '73%'}}></div>
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-green-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-green-600">73%</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">prefer short-form video ads</p>
+                    <div className="mt-4">
+                      <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-green-500 h-2 rounded-full w-[73%]"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Engagement Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">2.5x</div>
-                    <div className="text-sm text-gray-600 leading-tight">more engagement vs other formats</div>
-                  </div>
-                  <div className="mt-3 flex items-end space-x-1 justify-center">
-                    <div className="bg-gray-300 w-4 h-3 rounded-sm"></div>
-                    <div className="bg-blue-500 w-4 h-8 rounded-sm"></div>
-                  </div>
-                </div>
-
-                {/* Cost Efficiency Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-purple-600 mb-1">10x</div>
-                    <div className="text-sm text-gray-600 leading-tight">less cost per impression</div>
-                  </div>
-                  <div className="mt-3 flex items-end space-x-1 justify-center">
-                    <div className="bg-gray-300 w-3 h-8 rounded-sm"></div>
-                    <div className="bg-purple-500 w-3 h-2 rounded-sm"></div>
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-blue-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-blue-600">2.5x</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">more engagement vs other formats</p>
+                    <div className="mt-4">
+                       <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-blue-500 h-2 rounded-full w-[65%]"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                {/* SMB Struggle Chart */}
-                <div className="bg-white p-4 rounded-lg shadow-sm border border-green-200 flex flex-col justify-center items-center h-32">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-red-600 mb-1">60%</div>
-                    <div className="text-sm text-gray-600 leading-tight">of SMBs struggle with acquisition</div>
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-purple-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-purple-600">10x</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">less cost per impression</p>
+                    <div className="mt-4">
+                       <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-purple-500 h-2 rounded-full w-[90%]"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="mt-3 w-full">
-                    <div className="bg-gray-200 rounded-full h-2">
-                      <div className="bg-red-500 h-2 rounded-full" style={{width: '60%'}}></div>
+                </div>
+
+                {/* Stat Card */}
+                <div className="bg-white p-4 rounded-lg shadow-sm border border-transparent hover:border-red-300 transition-colors group">
+                  <div className="flex flex-col h-full">
+                    <div className="text-3xl font-bold text-red-600">60%</div>
+                    <p className="text-sm text-gray-600 mt-1 flex-1">of SMBs struggle with acquisition</p>
+                    <div className="mt-4">
+                       <div className="bg-gray-200 rounded-full h-2 w-full">
+                        <div className="bg-red-500 h-2 rounded-full w-[60%]"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -208,7 +209,7 @@ export default function About() {
               Our Key <span className="gradient-text">Innovation</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Event-driven micro-campaigns that capitalize on the perfect moments
+              Event-driven micro-campaigns that capitalize on the perfect moments.
             </p>
           </div>
           
@@ -251,10 +252,10 @@ export default function About() {
             Join the revolution of event-driven advertising and start seeing better results today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/pages/waitlist" className="bg-gradient-success text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors hover:opacity-90">
+            <Link href="/pages/waitlist" className="bg-gradient-success text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors hover:opacity-90 text-center flex items-center justify-center">
               Join Our Waitlist
             </Link>
-            <Link href="/pages/services" className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+            <Link href="/pages/services" className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center flex items-center justify-center">
               View Our Services
             </Link>
           </div>

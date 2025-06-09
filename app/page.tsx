@@ -32,7 +32,7 @@ export default function Home() {
                   <span className="gradient-text-hero p-2">at the right time</span>
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl font-semibold text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
                 ROI-optimized campaigns, automated for SMBs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -64,40 +64,92 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="feature-card text-center p-6 rounded-lg">
-              <div className="w-16 h-16 bg-gradient-green-radial rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+            {/* Real-Time Optimization Card */}
+            <div className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200 hover:from-blue-100 hover:to-indigo-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group">
+              <div className="relative">
+                <div className="relative w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  {/* Blue circular pulsing effect that radiates outward - only on hover */}
+                  <div className="absolute -inset-1 bg-blue-400 rounded-full group-hover:animate-ping opacity-0 group-hover:opacity-40 transition-opacity -z-10"></div>
+                  <svg className="w-10 h-10 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                {/* Floating badge */}
+                <div className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                  LIVE
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Real-Time Optimization</h3>
-              <p className="text-gray-600">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">Real-Time Optimization</h3>
+              <p className="text-gray-700 font-medium">
                 Automatically adjust ad spend and targeting based on live events, weather, and trending topics.
               </p>
+              {/* Subtle visual indicator dots */}
+              <div className="flex justify-center space-x-1 mt-4">
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse opacity-70 delay-75"></div>
+                <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse opacity-80 delay-150"></div>
+              </div>
             </div>
             
-            <div className="feature-card text-center p-6 rounded-lg">
-              <div className="w-16 h-16 bg-gradient-green-radial rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
+            {/* Short-Video Focus Card */}
+            <div className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-purple-50 to-pink-100 border border-purple-200 hover:from-purple-100 hover:to-pink-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group">
+              <div className="relative">
+                <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                {/* Engagement metrics */}
+                <div className="absolute -top-1 -right-1 bg-pink-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                  2.5x
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Short-Video Focus</h3>
-              <p className="text-gray-600">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-700 transition-colors">Short-Video Focus</h3>
+              <p className="text-gray-700 font-medium mb-4">
                 2.5x more engagement than other formats with 10x less cost per impression across all platforms.
               </p>
+              {/* Stats highlight */}
+              <div className="bg-white bg-opacity-60 rounded-lg p-3 mx-auto max-w-fit">
+                <div className="flex space-x-4 text-sm">
+                  <div className="text-center">
+                    <div className="font-bold text-purple-600">2.5x</div>
+                    <div className="text-gray-600">Engagement</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="font-bold text-pink-600">10x</div>
+                    <div className="text-gray-600">Lower Cost</div>
+                  </div>
+                </div>
+              </div>
             </div>
             
-            <div className="feature-card text-center p-6 rounded-lg">
-              <div className="w-16 h-16 bg-gradient-green-radial rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
+            {/* Affordable Pricing Card */}
+            <div className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-green-50 to-emerald-100 border border-green-200 hover:from-green-100 hover:to-emerald-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group">
+              <div className="relative">
+                <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                </div>
+                {/* Price badge */}
+                <div className="absolute -top-2 -right-2 bg-green-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                  $25/mo
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Affordable Pricing</h3>
-              <p className="text-gray-600">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-700 transition-colors">Affordable Pricing</h3>
+              <p className="text-gray-700 font-medium mb-4">
                 Starting at just $25/month - the most affordable autonomous ad management platform.
               </p>
+              {/* Price comparison */}
+              <div className="bg-white bg-opacity-60 rounded-lg p-3">
+                <div className="text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <span className="text-gray-400 line-through text-lg">$299</span>
+                    <span className="text-3xl font-bold gradient-text">$25</span>
+                  </div>
+                  <div className="text-sm text-gray-600 mt-1">92% savings vs competitors</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
