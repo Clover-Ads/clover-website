@@ -58,7 +58,7 @@ export default function Home() {
         <section className="pt-20 pb-2 bg-gradient-hero">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-4">
             <div className="text-center">
-              <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <div className={`transition-all duration-500 ease-out-cubic ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 font-heading">
                   Run ads in the 
                   <span className="flex flex-col">
@@ -110,11 +110,9 @@ export default function Home() {
             
             <div className="grid md:grid-cols-3 gap-8" role="list" aria-label="Platform features">
               {/* Real-Time Optimization Card */}
-              <article className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200 hover:from-blue-100 hover:to-indigo-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group" role="listitem">
+              <article className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200 hover:from-blue-100 hover:to-indigo-200 transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-lg group will-change-transform" role="listitem">
                 <div className="relative">
-                  <div className="relative w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300" role="img" aria-label="Real-time optimization icon">
-                    {/* Blue circular pulsing effect that radiates outward - only on hover */}
-                    <div className="absolute -inset-1 bg-blue-400 rounded-full group-hover:animate-ping opacity-0 group-hover:opacity-40 transition-opacity -z-10" aria-hidden="true"></div>
+                  <div className="relative w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-105 transition-transform duration-200 ease-out will-change-transform" role="img" aria-label="Real-time optimization icon">
                     <svg className="w-10 h-10 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                     </svg>
@@ -130,16 +128,16 @@ export default function Home() {
                 </p>
                 {/* Subtle visual indicator dots */}
                 <div className="flex justify-center space-x-1 mt-4" aria-hidden="true">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
-                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse opacity-70 delay-75"></div>
-                  <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse opacity-80 delay-150"></div>
+                  <div className="w-2 h-2 bg-blue-400 rounded-full opacity-60"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full opacity-70"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full opacity-80"></div>
                 </div>
               </article>
               
               {/* Short-Video Focus Card */}
-              <article className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-purple-50 to-pink-100 border border-purple-200 hover:from-purple-100 hover:to-pink-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group" role="listitem">
+              <article className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-purple-50 to-pink-100 border border-purple-200 hover:from-purple-100 hover:to-pink-200 transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-lg group will-change-transform" role="listitem">
                 <div className="relative">
-                  <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300" role="img" aria-label="Short-video focus icon">
+                  <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-105 transition-transform duration-200 ease-out will-change-transform" role="img" aria-label="Short-video focus icon">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
@@ -169,9 +167,9 @@ export default function Home() {
               </article>
               
               {/* Affordable Pricing Card */}
-              <article className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-green-50 to-emerald-100 border border-green-200 hover:from-green-100 hover:to-emerald-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group" role="listitem">
+              <article className="feature-card text-center p-8 rounded-xl bg-gradient-to-br from-green-50 to-emerald-100 border border-green-200 hover:from-green-100 hover:to-emerald-200 transition-all duration-200 ease-out hover:-translate-y-1 hover:shadow-lg group will-change-transform" role="listitem">
                 <div className="relative">
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300" role="img" aria-label="Affordable pricing icon">
+                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-105 transition-transform duration-200 ease-out will-change-transform" role="img" aria-label="Affordable pricing icon">
                     <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                     </svg>
@@ -212,10 +210,10 @@ export default function Home() {
               </p>
             </header>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="transform hover:scale-105 transition-transform duration-500">
+              <div className="transform hover:scale-[1.02] transition-all duration-200 ease-out will-change-transform">
                 <AdMockup />
               </div>
-              <div className="transform hover:scale-105 transition-transform duration-500">
+              <div className="transform hover:scale-[1.02] transition-all duration-200 ease-out will-change-transform">
                 <AnalyticsMockup />
               </div>
             </div>
@@ -238,7 +236,7 @@ export default function Home() {
           
           <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
             {/* iOS Notification */}
-            <div className="transform hover:-translate-y-2 transition-transform duration-500 lg:order-1">
+            <div className="transform hover:-translate-y-1 transition-all duration-200 ease-out lg:order-1 will-change-transform">
               <div className="bg-[rgba(58,58,60,0.9)] backdrop-blur-[40px] rounded-[13px] p-4 shadow-[0_10px_40px_rgba(0,0,0,0.25)] max-w-[350px] border border-[rgba(255,255,255,0.15)]">
                 <div className="flex items-start space-x-3">
                   <div className="w-[40px] h-[40px] bg-[#34C759] rounded-[10px] flex items-center justify-center flex-shrink-0">
@@ -277,7 +275,7 @@ export default function Home() {
             </div>
 
             {/* Campaign Insights */}
-            <div className="transform hover:scale-105 transition-transform duration-500 lg:order-2">
+            <div className="transform hover:scale-[1.02] transition-all duration-200 ease-out lg:order-2 will-change-transform">
               <CampaignInsights />
             </div>
           </div>
