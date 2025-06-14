@@ -245,17 +245,15 @@ export default function Waitlist() {
           
           <div className="grid md:grid-cols-3 gap-8">
             {/* Priority Access Card */}
-            <div className="text-center p-8 bg-gradient-to-br from-amber-50 to-orange-100 border border-amber-200 rounded-xl shadow-lg hover:from-amber-100 hover:to-orange-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group">
+            <div className="text-center p-8 bg-gradient-to-br from-amber-50 to-orange-100 border border-amber-200 rounded-xl shadow-lg hover:from-amber-100 hover:to-orange-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group will-change-transform">
               <div className="relative">
-                <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  {/* Subtle pulsing effect */}
-                  <div className="absolute -inset-1 bg-amber-400 rounded-full animate-ping opacity-40 -z-10"></div>
-                  <svg className="w-10 h-10 text-white relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300 will-change-transform">
+                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 16H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
                   </svg>
                 </div>
                 {/* VIP badge */}
-                <div className="absolute -top-2 -right-2 bg-amber-600 text-white text-xs px-2 py-1 rounded-full font-semibold">
+                <div className="absolute -top-2 -right-2 bg-amber-600 text-white text-xs px-2 py-1 rounded-full font-semibold z-10">
                   VIP
                 </div>
               </div>
@@ -274,9 +272,9 @@ export default function Waitlist() {
             </div>
             
             {/* Special Pricing Card */}
-            <div className="text-center p-8 bg-gradient-to-br from-emerald-50 to-green-100 border border-emerald-200 rounded-xl shadow-lg hover:from-emerald-100 hover:to-green-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group">
+            <div className="text-center p-8 bg-gradient-to-br from-emerald-50 to-green-100 border border-emerald-200 rounded-xl shadow-lg hover:from-emerald-100 hover:to-green-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group will-change-transform">
               <div className="relative">
-                <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300 will-change-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                   </svg>
@@ -303,9 +301,9 @@ export default function Waitlist() {
             </div>
             
             {/* Direct Input Card */}
-            <div className="text-center p-8 bg-gradient-to-br from-indigo-50 to-purple-100 border border-indigo-200 rounded-xl shadow-lg hover:from-indigo-100 hover:to-purple-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group">
+            <div className="text-center p-8 bg-gradient-to-br from-indigo-50 to-purple-100 border border-indigo-200 rounded-xl shadow-lg hover:from-indigo-100 hover:to-purple-200 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl group will-change-transform">
               <div className="relative">
-                <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300 will-change-transform">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                   </svg>
